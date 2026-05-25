@@ -1,6 +1,8 @@
 body{
 font-family:Arial;
 background-image: url(ChatGPT\ Image\ 25\ de\ mai.\ de\ 2026\,\ 07_43_11.png);
+background-repeat: no-repeat;
+background-size: 100%;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -14,42 +16,6 @@ margin:0;
     --preto: black;
     --fhemig: #0096bb;
 
-}
-
-.container{
-text-align:center;
-}
-
-h1{
-margin-bottom:40px;
-}
-
-.botoes{
-display:flex;
-gap:40px;
-justify-content:center;
-}
-
-.botao{
-padding:25px 50px;
-font-size:20px;
-font-weight:bold;
-border-radius:10px;
-text-decoration:none;
-color:white;
-transition:0.2s;
-}
-
-.hj{
-background:#2563eb;
-}
-
-.hij{
-background:#16a34a;
-}
-
-.botao:hover{
-transform:scale(1.05);
 }
 
 .botao-voltar{
@@ -71,3 +37,95 @@ transition:0.2s;
 background:#1f2937;
 transform:scale(1.05);
 }
+
+.cards-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.hospital-card{
+    width:420px;
+    border-radius:20px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.hospital-card:hover{
+    transform:translateY(-8px);
+}
+
+.card-content{
+    height:290px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+}
+
+.azul .card-content{
+background-image: url(ChatGPT\ Image\ 25\ de\ mai.\ de\ 2026\,\ 08_42_20.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.verde .card-content{
+   background-image: url(ChatGPT\ Image\ 25\ de\ mai.\ de\ 2026\,\ 08_47_04.png);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.icon{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.card-content h2{
+    font-size:42px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.card-content p{
+    font-size:22px;
+    opacity:0.95;
+}
+
+.card-footer{
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:22px 30px;
+    font-size:24px;
+    font-weight:600;
+    border: none;
+    width:350px;
+}
+
+.azul .card-footer{
+    color:#1f5eff;
+}
+
+.verde .card-footer{
+    color:#00a651;
+}
+
+.arrow{
+    font-size:34px;
+}
+
+.card-footer a {
+  text-decoration: dashed;
+  color: black;  
+}
+

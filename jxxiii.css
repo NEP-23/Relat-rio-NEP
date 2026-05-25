@@ -12,22 +12,6 @@ text-align:center;
 
 }
 
-.container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-padding:40px;
-}
-
-a{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-text-decoration:none;
-color:black;
-font-weight:bold;
-}
 
 .botao-voltar{
 position:fixed;
@@ -48,4 +32,77 @@ transition:0.2s;
 .botao-voltar:hover{
 background:#1f2937;
 transform:scale(1.05);
+}
+
+.cards-container{
+width: 100%;
+height: 90vh;
+display: flex;
+justify-content: space-around;
+align-items: center;    
+}
+
+.setor-card{
+    width:320px;
+    height:360px;
+    background:#ffffff;
+    border-radius:24px;
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.08);
+    padding:40px 30px;
+    text-align:center;
+    transition:all .3s ease;
+    cursor:pointer;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.setor-card:hover{
+    transform:translateY(-10px);
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.12);
+}
+
+.icon-circle{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    background:#eef3ff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+.setor-card h3{
+    font-size:34px;
+    color:#0b1d48;
+    margin-bottom:10px;
+}
+
+.setor-card span{
+    font-size:24px;
+    color:#8a97b5;
+}
+
+.card-footer{
+    margin-top:auto;
+
+    width:100%;
+    padding-top:25px;
+    border-top:1px solid #edf1f7;
+
+    font-size:50px;
+    color:#2f66ff;
+    font-weight:300;
+}
+
+.setor-card{
+    text-decoration:none;
+    color:inherit;
 }
